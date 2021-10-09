@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title>My Qualification</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+
+        <img class="header-image" src="front-logo.jpeg.png">
+
+
+
+        <ul>
+            <li style="color: white;">Find Me</li>
+            <li><a href="https://www.facebook.com/mohammad.hamza.94" target="_blank">Facebook</a></li>
+            <li><a href="" target="_blank">Twitter</a></li>
+            <li><a href="" target="_blank">Instagram</a></li>
+            <li>
+                <a href="#about-section">About Me</a>
+            </li>
+            <div class="btn">
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+
+            </div>
+        </ul>
+
+
+
+        <p class="header-heading">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”<br> – Hamza Ahmed</p>
+
+    </div>
+
+    <script>
+        var btn = document.getElementById("btn")
+
+        function toggleBtn() {
+            btn.classList.toggle("active")
+        }
+
+        jQuery(document).on('click', '#btn', function($) {
+            var btn = jQuery(this);
+            if (btn.hasClass("active")) {
+                jQuery('div.header').css("background-color", "black");
+                jQuery('body').css("background-color", "green");
+                jQuery('div#about-me').css("background-color", "black");
+                jQuery('div.footer').css("background-color", "black");
+            } else {
+                jQuery('div.header').css("background-color", "#4c0979");
+                jQuery('body').css("background-color", "white");
+                jQuery('div#about-me').css("background-color", "#4c0979");
+                jQuery('div.footer').css("background-color", "#4c0979");
+                jQuery('ul,li,a').css("color", "white");
+                jQuery('p.header-heading').css("color", "white");
+            }
+        });
+    </script>
+
+    <div>
+        <h1>Make it work, make it right, make it fast. </h1>
+
+
+        <p class="center-para">Forward-thinking Software Engineer with background working effectively in dynamic environments. Fluent in PHP and C sharp programming languages used to develop applications. Proud team player focused on achieving project objectives with speed
+            and accuracy.
+        </p>
+        <div>
+            <img src="profile-pic.jpeg" class="image1">
+        </div>
+
+
+    </div>
+
+    <div id="about-me">
+        <section id="about-section">
+            <h2>About Me</h2>
+            <div class="about1">
+                <h3>Software Engineer / Software Developer</h3>
+                <p class="about-para">Codup | Karachi, Pakistan Nov 2020 - Present</p>
+                <ul class="un-list">
+                    <li class="main-list">Working on PHP with framework WordPress and Laravel.</li>
+                    <li class="main-list">Created multiple WooCommerce extension plugins from scratch </li>
+                    <li class="main-list">Working on various projects regarding UAT points or Addons.</li>
+                    <li class="main-list">Using laravel integrating APIs of different platforms and working with web applications.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="about-me-2">
+        <h2>About Me</h2>
+        <div class="about2">
+            <h4>Software Engineer / Software Developer</h4>
+            <p class="about-para-2">SQSOFT | Karachi, Pakistan</p>
+            <ul class="un-list-1">
+                <li class="main-list-1">Created web applications and components using PHP programming language and made whole ERP using core PHP</li>
+                <li class="main-list-1">Consulted regularly with internal customers on application development project status, new project proposals and software-related technical issues.</li>
+                <li class="main-list-1">Worked closely with c sharp dot net from planning stages to deployment to deliver ontarget projects.
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container-qual">
+        <h1 class="center-heading">Qualification</h1>
+
+        <img class="qual-logo" src="logo1.jpeg.png">
+        <p class="qual-para">BS (COMPUTER SCIENCE), IQRA UNIVERSITY
+        </p>
+        <p class="qual-para-2">BS (COMPUTER SCIENCE), IQRA UNIVERSITY,<br> Software Engineering | Karachi May 2020 | 3.2 CGPA</p>
+        <br>
+        <br>
+        <br>
+        <img class="qual-logo" src="logo1.jpeg.png">
+        <p class="qual-para">INTERMEDIATE, SM GOVERNMENT SCIENCE COLLEGE
+        </p>
+        <p class="qual-para-2">INTERMEDIATE, SM GOVERNMENT SCIENCE COLLEGE, <br>Engineering Science | Karachi June 2016</p>
+        <br>
+        <br>
+        <br>
+        <img class="qual-logo" src="certificate3.png">
+        <p class="qual-para">Certifications
+        </p>
+        <p class="qual-para-2">Deep Learning <br>Coursera Starting August 2020<br> Information Technology <br>Pak College Starting February 2014</p>
+        <br>
+        <br>
+        <img class="qual-logo" src="house-logo.png">
+        <p class="qual-para">Industries
+        </p>
+        <p class="qual-para-2">Software Houses</p>
+        <br>
+        <br>
+        <br>
+        <img class="qual-logo" src="house-logo.png">
+        <p class="qual-para">Function Areas
+        </p>
+        <p class="qual-para-2">Software & Web Development</p>
+        <div class="profile-container-2">
+            <img class="profile-2" src="profile-pic-2.jpeg">
+        </div>
+        <div class="footer">
+            <h1 class="footer-heading">Projects</h1>
+            <p class="footer-para">Build WooCommerce extension plugins like bundle products and building your own box product type<br>E-commerce web application using php,javascript and mysql which can do all essential tasks related to e-commerce.<br>Banking management system
+                connected with multiple tables of database which can do all the essential tasks which can be done by bank employee using C sharp programming language.<br>Student management system using C language in which text file was used for storage.
+                <br>University management system using java with integration of SQL database.<br>Normalize and maintain database using SQL.
+                <br>Made complicated network using routers, switches and servers using Cisco Packet Tracer.
+                <br>Chatter bot using text file with Python.
+            </p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
